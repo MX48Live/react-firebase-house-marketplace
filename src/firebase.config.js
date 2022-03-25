@@ -11,8 +11,6 @@ const firebaseConfig = {
 
 };
 
-console.log(import.meta.env)
-
 initializeApp(firebaseConfig)
 
 export const db = getFirestore()
