@@ -2,13 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD-CPNS0MfT6A7qP4ghldlACx1nkZDsgUQ",
-  authDomain: "mx48live-house-marketplace.firebaseapp.com",
-  projectId: "mx48live-house-marketplace",
-  storageBucket: "mx48live-house-marketplace.appspot.com",
-  messagingSenderId: "992972747908",
-  appId: "1:992972747908:web:a08d26a6d3581b3a9b7ed1"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
+
 };
+
+console.log(import.meta.env)
 
 initializeApp(firebaseConfig)
 

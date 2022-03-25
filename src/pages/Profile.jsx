@@ -15,8 +15,9 @@ function Profile() {
     auth.signOut()
     navigate('/')
     toast.success('Signed Out')
-
   }
+
+  const { name, email } = formData
 
   return (
     <div className="profile">
